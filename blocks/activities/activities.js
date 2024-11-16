@@ -24,4 +24,4 @@ export default function decorate(block) {
   }).join('');
 
   wrapper.innerHTML = activitiesHTML;
-} 
+}
