@@ -57,14 +57,23 @@ color: var(--color-heart-red);
   aspect-ratio: 3/4;
   background: var(--color-nocturnal-blue);
   border-radius: var(--card-radius);
-  flex: 0 0 calc((100% - (var(--carousel-gap) * 3)) / 4);
+  /* 
+  This CSS line defines the width of a single carousel card:
+  - flex: 0 0 [width] - sets element as inflexible (won't grow or shrink)
+  - calc() calculates width:
+    - takes 100% of container width
+    - subtracts 3 gaps between cards (var(--carousel-gap) * 3)
+    - divides by 6 to get single card width
+  - results in 6 cards displayed side by side with equal spacing
+  */
+  flex: 0 0 calc((100% - (var(--carousel-gap) * 3)) / 6);
   overflow: hidden;
   position: relative;
-  transition: transform var(--hover-animation);
+  transition: 0.3s all var(--hover-animation);
 }
 
 .carousel-card:hover {
-  transform: translateY(calc(var(--hover-animation-offset) * -1));
+  transform: translateY(calc(var(--hover-animation-offset) * -10));
 }
 
 .card-image {

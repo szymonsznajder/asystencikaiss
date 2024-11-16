@@ -11,7 +11,7 @@ const CAROUSEL_CONFIG = {
   },
   AUTO_SCROLL: {
     ENABLED: true,
-    INTERVAL: 3000,
+    INTERVAL: 6000,
     PAUSE_ON_HOVER: true,
   }
 };

@@ -1,4 +1,8 @@
 /* VideoHero block styles */
+.section.videohero-container {
+  all: unset;
+}
+
 .videohero {
   --video-z-index: -1;
   height: 100vh;
@@ -10,7 +14,7 @@
 .videohero-wrapper {
   height: 100%;
   left: 0;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   width: 100%;
 }
