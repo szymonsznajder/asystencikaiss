@@ -3,8 +3,13 @@
  * @param {HTMLElement} block The block element to decorate
  */
 export default function decorate(block) {
-  // Get wrapper element
-  const wrapper = block.querySelector('.activities-wrapper');
+  // Create wrapper if it doesn't exist
+  let wrapper = block.querySelector('.activities-wrapper');
+  if (!wrapper) {
+    wrapper = document.createElement('div');
+    wrapper.className = 'activities-wrapper';
+    block.appendChild(wrapper);
+  }
   
   // Get all rows except the header (first row)
   const rows = [...block.querySelectorAll(':scope > div:not(:first-child)')];
