@@ -4,7 +4,7 @@
   --activities-icon-size: 3rem;
   --activities-color: #333;
   --activities-icon-color: #FF5722; /* Orange color for icons */
-  --activities-text-size: 0.875rem;
+  /* --activities-text-size: 0.875rem; */
   margin: 0 auto;
   max-width: 1200px;
   padding: 2rem 1rem;
@@ -27,12 +27,12 @@
 }
 
 .activities-icon {
-  height: var(--activities-icon-size);
-  width: var(--activities-icon-size);
+  /* height: var(--activities-icon-size); */
+  /* width: var(--activities-icon-size); */
 }
 
 .activities-icon img {
-  filter: invert(42%) sepia(94%) saturate(1352%) hue-rotate(346deg) brightness(119%) contrast(119%); /* Makes SVG icons orange */
+  /* filter: invert(42%) sepia(94%) saturate(1352%) hue-rotate(346deg) brightness(119%) contrast(119%); Makes SVG icons orange */
   height: 100%;
   object-fit: contain;
   width: 100%;

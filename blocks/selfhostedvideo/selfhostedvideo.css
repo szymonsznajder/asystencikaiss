@@ -1,0 +1,17 @@
+.selfhostedvideo {
+  --video-height: 100vh;
+  --video-width: 100vw;
+  --video-object-fit: cover;
+}
+
+.selfhostedvideo-wrapper {
+  height: var(--video-height);
+  overflow: hidden;
+  width: var(--video-width);
+}
+
+.selfhostedvideo video {
+  height: 100%;
+  object-fit: var(--video-object-fit);
+  width: 100%;
+} 
